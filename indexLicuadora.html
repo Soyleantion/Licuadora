@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/licuadora.png">
+
+    <title>Licuadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <audio id="blender-button-sound" src="sound/soundOnOff.mp3" type="audio/mpeg" loop></audio>
+    <audio id="blender-button-onOff" src="sound/onOff.mp3" type="audio/mpeg"></audio>
+
+</head>
+
+<body>
+
+    <div id="blender" class="blender">
+        <div class="blender-button" id="blender-button-main" onclick="controlarLicuadora(1)"> </div>
+        <div class="blender-button" id="blender-button-one" onclick="blenderSpeed(1)"> </div>
+        <div class="blender-button" id="blender-button-two" onclick="blenderSpeed(0.1)"> </div>
+        <div class="blender-button" id="blender-button-three" onclick="blenderSpeed(0.05)"> </div>
+    </div>
+
+    <script src="js/motor.js"></script>
+</body>
+
+</html>

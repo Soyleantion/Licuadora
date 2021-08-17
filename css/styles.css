@@ -1,0 +1,80 @@
+* {
+    background-color: #999;
+}
+
+/* Blender contiene la apariencia de la licuadora de forma apagada
+   ========================================================================== */
+.blender {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 500px;
+    background-image: url(../img/apagada.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Esta clase blender-active se crea para cambiar el fondo y darle animación de encendida
+   ========================================================================== */
+.blender-active {
+    background-image: url(../img/encedida.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilo de los botones
+   ========================================================================== */
+.blender-button {
+    position: relative;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+/* Posicionamiento de los diferentes botones main, one, two three para las diferentes funciones
+   ========================================================================== */
+
+#blender #blender-button-main {
+    background-color: yellow;
+    top: 73%;
+    left: 49.5%;
+}
+
+#blender #blender-button-main:hover {
+    opacity: 100%;
+}
+
+#blender-button-one {
+    background-color: red;
+    top: 81.5%;
+    left: 45.1%;
+}
+#blender #blender-button-one:hover{
+    opacity: 100%;
+}
+
+#blender-button-two {
+    background-color: blue;
+    top: 81.5%;
+    left: 46.5%;
+}
+
+#blender #blender-button-two:hover{
+    opacity: 100%;
+}
+#blender-button-three {
+    background-color: chartreuse;
+    top: 81.5%;
+    left: 47.8%;
+}
+
+#blender #blender-button-three:hover{
+    opacity: 100%;
+}
